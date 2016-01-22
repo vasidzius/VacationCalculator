@@ -8,11 +8,12 @@ import org.openqa.selenium.support.FindBy;
 
 import static com.codeborne.selenide.Selectors.withText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.page;
 
 /**
  * Created by vkov on 22-Jan-16.
  */
-public class CalculatorPage {
+public class InitialDataCalculatorPage {
 
     @FindBy(id = "Vacation_Period_PeriodFrom_DateInputControl_Input")
     public SelenideElement inputVacationPeriodDateFrom;
@@ -34,17 +35,16 @@ public class CalculatorPage {
 
 
     public void setAPeriodOfVacationFrom(String dateFrom) {
-        /*inputVacationPeriodDateFrom.click();
+        inputVacationPeriodDateFrom.clear();
+        inputVacationPeriodDateFrom.click();
         inputVacationPeriodDateFrom.sendKeys(dateFrom.substring(0,2)+dateFrom.substring(3,5) + dateFrom.substring(6));
-        */
-        WebDriverRunner.getWebDriver().findElement(By.id("Vacation_Period_PeriodFrom_DateInputControl_Input")).click();
-        WebDriverRunner.getWebDriver().findElement(By.id("Vacation_Period_PeriodFrom_DateInputControl_Input")).sendKeys(dateFrom.substring(0,2)+dateFrom.substring(3,5) + dateFrom.substring(6));
-
         int n=0;
     }
 
     public void setAPeriodOfVacationTo(String dateTo) {
-        inputVacationPeriodDateTo.setValue(dateTo.substring(0,2)+dateTo.substring(3,5) + dateTo.substring(6));
+        inputVacationPeriodDateTo.clear();
+        inputVacationPeriodDateTo.click();
+        inputVacationPeriodDateTo.sendKeys(dateTo.substring(0,2)+dateTo.substring(3,5) + dateTo.substring(6));
     }
 
     public void setTypeOfVacation(String typeOfVacation) {
@@ -52,7 +52,21 @@ public class CalculatorPage {
         $(withText(typeOfVacation)).click();
     }
 
-    public void clickNext() {
+    public SummarySheetCalculatorPage clickNext() {
         buttonSpanNext.click();
+        return page(SummarySheetCalculatorPage.class);
+
+    }
+
+    public void setCalculationPeriodDateFrom(String dateFrom) {
+        inputCalculationPeriodDateFrom.clear();
+        inputCalculationPeriodDateFrom.click();
+        inputCalculationPeriodDateFrom.sendKeys(dateFrom.substring(0,2)+dateFrom.substring(3,5) + dateFrom.substring(6));
+    }
+
+    public void setCalculationPeriodDateTo(String dateTo) {
+        inputCalculationPeriodDateTo.clear();
+        inputCalculationPeriodDateTo.click();
+        inputCalculationPeriodDateTo.sendKeys(dateTo.substring(0,2)+dateTo.substring(3,5) + dateTo.substring(6));
     }
 }

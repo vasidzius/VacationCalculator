@@ -35,11 +35,41 @@ formatter.step({
   "keyword": "And ",
   "line": 7
 });
+formatter.step({
+  "name": "set a period of calculate \"01.01.2015\" - \"31.12.2015\"",
+  "keyword": "And ",
+  "line": 8
+});
+formatter.step({
+  "name": "click \"Далее\"",
+  "keyword": "And ",
+  "line": 9
+});
+formatter.step({
+  "name": "set for each month salary as \"50000,00\"",
+  "keyword": "And ",
+  "line": 10
+});
+formatter.step({
+  "name": "press \"Далее\"",
+  "keyword": "When ",
+  "line": 11
+});
+formatter.step({
+  "name": "\"Сумма отпускных\" equals \"18 771,28\"",
+  "keyword": "Then ",
+  "line": 12
+});
+formatter.step({
+  "name": "\"НДФЛ 13%\" equals \"2 440,00\"",
+  "keyword": "And ",
+  "line": 13
+});
 formatter.match({
   "location": "StepsDef.openStartPage()"
 });
 formatter.result({
-  "duration": 3200338143,
+  "duration": 2991976290,
   "status": "passed"
 });
 formatter.match({
@@ -56,7 +86,7 @@ formatter.match({
   "location": "StepsDef.setAPeriodOfVacation(String,String)"
 });
 formatter.result({
-  "duration": 1726540141,
+  "duration": 3262017210,
   "status": "passed"
 });
 formatter.match({
@@ -69,7 +99,56 @@ formatter.match({
   "location": "StepsDef.setAVacationType(String)"
 });
 formatter.result({
-  "duration": 611934431,
+  "duration": 1578317823,
   "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "01.01.2015",
+      "offset": 27
+    },
+    {
+      "val": "31.12.2015",
+      "offset": 42
+    }
+  ],
+  "location": "StepsDef.setAPeriodOfCalculate(String,String)"
+});
+formatter.result({
+  "duration": 3304299392,
+  "status": "passed"
+});
+formatter.match({
+  "location": "StepsDef.clickNext()"
+});
+formatter.result({
+  "duration": 743407854,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "50000,00",
+      "offset": 30
+    }
+  ],
+  "location": "StepsDef.setForEachMonthSalaryAs(String)"
+});
+formatter.result({
+  "duration": 7823403370,
+  "status": "passed"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
+});
+formatter.match({});
+formatter.result({
+  "status": "undefined"
 });
 });

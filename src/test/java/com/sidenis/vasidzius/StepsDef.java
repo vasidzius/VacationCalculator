@@ -1,5 +1,6 @@
 package com.sidenis.vasidzius;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import org.apache.logging.log4j.LogManager;
@@ -14,7 +15,8 @@ import static com.codeborne.selenide.Selenide.page;
 public class StepsDef {
 
     FirstPage firstPage;
-    CalculatorPage calculatorPage;
+    InitialDataCalculatorPage initialDataCalculatorPage;
+    SummarySheetCalculatorPage summarySheetCalculatorPage;
     static final Logger logger = LogManager.getLogger();
 
     @Given("open start page")
@@ -25,28 +27,39 @@ public class StepsDef {
         //Actually calculator opens in other page, it's a iframe
         String s = firstPage.calcFrame.attr("src");
         firstPage = page(FirstPage.class);
-        calculatorPage = open(s, CalculatorPage.class);
+        initialDataCalculatorPage = open(s, InitialDataCalculatorPage.class);
         logger.trace("open start page");
     }
 
 
     @And("^set a period of vacation \"([^\"]*)\" - \"([^\"]*)\"$")
     public void setAPeriodOfVacation(String dateFrom, String dateTo){
-        calculatorPage.setAPeriodOfVacationFrom(dateFrom);
-        calculatorPage.setAPeriodOfVacationTo(dateTo);
+        initialDataCalculatorPage.setAPeriodOfVacationFrom(dateFrom);
+        initialDataCalculatorPage.setAPeriodOfVacationTo(dateTo);
     }
 
     @And("^set a vacation type \"([^\"]*)\"$")
     public void setAVacationType(String typeOfVacation) {
-        calculatorPage.setTypeOfVacation(typeOfVacation);
+        initialDataCalculatorPage.setTypeOfVacation(typeOfVacation);
     }
 
     @And("^click \"Далее\"$")
     public void clickNext()
     {
-        calculatorPage.clickNext();
+        summarySheetCalculatorPage = initialDataCalculatorPage.clickNext();
     }
 
 
+    @And("^set a period of calculate \"([^\"]*)\" - \"([^\"]*)\"$")
+    public void setAPeriodOfCalculate(String dateFrom, String dateTo){
+        initialDataCalculatorPage.setCalculationPeriodDateFrom(dateFrom);
+        initialDataCalculatorPage.setCalculationPeriodDateTo(dateTo);
+    }
 
+    @And("^set for each month salary as \"([^\"]*)\"$")
+    public void setForEachMonthSalaryAs(String salary){
+        summarySheetCalculatorPage.setSalaryToAllMonths(salary);
+        // Write code here that turns the phrase above into concrete actions
+
+    }
 }

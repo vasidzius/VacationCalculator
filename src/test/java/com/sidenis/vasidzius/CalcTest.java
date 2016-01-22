@@ -26,7 +26,7 @@ import java.io.File;
         )
 
 
-public class CustomizeTestRunnerCalcTest {
+public class CalcTest {
         @BeforeClass
         static public void initializeWebDriver()
         {
@@ -37,10 +37,10 @@ public class CustomizeTestRunnerCalcTest {
 
         }
 
-        @AfterClass
+/*        @AfterClass
         static public void killDrive()
         {
                 WebDriverRunner.closeWebDriver();
-        }
+        }*/
 
 }
