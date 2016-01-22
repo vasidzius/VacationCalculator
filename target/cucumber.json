@@ -1,0 +1,80 @@
+[
+  {
+    "id": "calculate-money-for-vacation",
+    "description": "",
+    "name": "Calculate money for vacation",
+    "keyword": "Feature",
+    "line": 1,
+    "elements": [
+      {
+        "id": "calculate-money-for-vacation;calculate-money-for-vacation",
+        "description": "",
+        "name": "Calculate money for vacation",
+        "keyword": "Scenario",
+        "line": 4,
+        "steps": [
+          {
+            "result": {
+              "duration": 3200338143,
+              "status": "passed"
+            },
+            "name": "open start page",
+            "keyword": "Given ",
+            "line": 5,
+            "match": {
+              "location": "StepsDef.openStartPage()"
+            }
+          },
+          {
+            "result": {
+              "duration": 1726540141,
+              "status": "passed"
+            },
+            "name": "set a period of vacation \"21.01.2016\" - \"31.01.2016\"",
+            "keyword": "And ",
+            "line": 6,
+            "match": {
+              "arguments": [
+                {
+                  "val": "21.01.2016",
+                  "offset": 26
+                },
+                {
+                  "val": "31.01.2016",
+                  "offset": 41
+                }
+              ],
+              "location": "StepsDef.setAPeriodOfVacation(String,String)"
+            }
+          },
+          {
+            "result": {
+              "duration": 611934431,
+              "status": "passed"
+            },
+            "name": "set a vacation type \"Ежегодный основной\"",
+            "keyword": "And ",
+            "line": 7,
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ежегодный основной",
+                  "offset": 21
+                }
+              ],
+              "location": "StepsDef.setAVacationType(String)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "comments": [
+          {
+            "value": "#  For calculating money which company has to pay to employee the employee can use http://www.b-kontur.ru/profi/payment-holiday#_",
+            "line": 2
+          }
+        ]
+      }
+    ],
+    "uri": "calculate_money_for_vacation.feature"
+  }
+]

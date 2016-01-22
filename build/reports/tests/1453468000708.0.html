@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="ff ff-gt35 zoom-gte125 zoom-lt150 html__dropdownOpened"><head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge, chrome=0, requiresActiveX=true" />
+    <meta charset="utf-8" />
+    <meta content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" name="SKYPE_TOOLBAR" />
+    <meta content="width=device-width" name="viewport" />
+    <meta content="none" name="msapplication-config" />
+        <link type="image/x-icon" href="/favicon.ico#actual" rel="shortcut icon" />
+    <link type="image/x-icon" href="/favicon.ico#actual" rel="icon" />
+
+<title>
+        Расчет отпускных - Контур.Бухгалтерия
+    </title>
+
+    <link type="text/css" rel="Stylesheet" media="all" href="/WebForms/Static/common.css" /><link type="text/css" rel="Stylesheet" media="all" href="/WebForms/Static/common__calc.css" /><link type="text/css" rel="Stylesheet" media="all" href="/WebForms/Static/C-Common/common.css" />
+
+    <script type="text/javascript" async="" src="//www.googleadservices.com/pagead/conversion_async.js"></script><script async="" src="//www.google-analytics.com/analytics.js"></script><script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-TST42H"></script><script src="/bundles/webforms.js?v=IzrnZNtIETfKpLQ4bhwKL0jFHoUp3xVtd_TZNyWv7701"></script>
+<script src="/bundles/common.js?v=f6FLlU6Iyd-g0IfC2IC6Tgl31yW4vuuv7Yh9VZXp5yI1"></script>
+
+
+    <script type="text/javascript">
+        $(function () {
+            $("#Main").removeClass("hidden");
+            $("noscript").remove();
+        });
+    </script>
+
+    </head>
+
+<body class="body__widget body__ body__Calculator body__Calculator_Properties body__Calculator_Properties_Run  body__widget__promo ">
+    
+    
+    <div class="c-wrapper">
+       
+        
+
+        <div class="middle" id="Main">
+            <div class="content">
+            
+    
+<div class="heading heading__wizard">
+    <h2 class="headingTitle">
+        Калькулятор отпускных
+        
+    </h2>
+    <div id="Vacation_Wizard_WizardHeaderControl" class="headingWizard ">
+        
+            <div class="headingWizard_step 
+                headingWizard_step__first 
+                 
+                headingWizard_step__active 
+                " id="Vacation_Wizard_WizardHeaderControl_0_Container">
+                <span class="" id="Vacation_Wizard_WizardHeaderControl_0_Text">Исходные данные</span>
+                <a wizardstepname="Properties" class="hidden" id="Vacation_Wizard_WizardHeaderControl_0_Link" href="#">Исходные данные</a>
+            </div>
+        
+            <div class="headingWizard_step 
+                 
+                 
+                 
+                " id="Vacation_Wizard_WizardHeaderControl_1_Container">
+                <span class="hidden" id="Vacation_Wizard_WizardHeaderControl_1_Text">Сводная таблица</span>
+                <a wizardstepname="SummaryTable" class="" id="Vacation_Wizard_WizardHeaderControl_1_Link" href="#">Сводная таблица</a>
+            </div>
+        
+            <div class="headingWizard_step 
+                 
+                headingWizard_step__last 
+                 
+                " id="Vacation_Wizard_WizardHeaderControl_2_Container">
+                <span class="" id="Vacation_Wizard_WizardHeaderControl_2_Text">Итоги</span>
+                <a wizardstepname="Results" class="hidden" id="Vacation_Wizard_WizardHeaderControl_2_Link" href="#">Итоги</a>
+            </div>
+                               
+    </div>
+</div>
+
+
+
+        
+
+    <div class="g-48 g-safeContext">
+        <div class="g-safeContext">
+
+            <div class="g-col-1 g-span-10">
+		        Период отпуска:
+	        </div>
+	        <div class="g-col-11 g-span-32">
+                    
+<span class="field field__px110 field__type field__type__calendarDay" id="Vacation_Period_PeriodFrom_IdControl_Border">
+    <input type="text" autocomplete="off" maxlength="10" value="" class="" id="Vacation_Period_PeriodFrom_DateInputControl_Input" />
+    
+    <span machine-render="1" id="Vacation_Period_PeriodFrom_DateInputControl_Button" class="button button__type"><span class="button_content"></span></span>
+</span>
+
+
+                    —
+                    
+<span class="field field__px110 field__type field__type__calendarDay" id="Vacation_Period_PeriodTo_IdControl_Border">
+    <input type="text" autocomplete="off" maxlength="10" value="" class="" id="Vacation_Period_PeriodTo_DateInputControl_Input" />
+    
+    <span machine-render="1" id="Vacation_Period_PeriodTo_DateInputControl_Button" class="button button__type"><span class="button_content"></span></span>
+</span>
+
+
+                    <span class="" id="VacationPeriodText">
+                        <span class="  " id="Vacation_PeriodLength_TextControl_Text">= 1 день</span>
+                    </span>
+                    <span hint="periodLengthHintHint" class="icon icon__info  hidden" id="periodLengthHint"></span>
+                     
+                    
+<span class="validation validation__ok" id="Vacation_Period_ValidationControl"><span id="Vacation_Period_ValidationControl_Message"></span></span>
+
+
+	        </div>
+            
+        </div>
+    
+        <div class="g-safeContext">
+			<div class="g-col-1 g-span-10">
+				Вид отпуска:
+			</div>
+			<div class="g-col-11 g-span-16">
+                
+<a class="button button__type button__type__dropdown      -hover button__opened" dropdownid="Vacation_Type_FancySelectControl" id="Vacation_Type_FancySelectControl" href="#" machine-render="1" tabindex="0">
+    <span class="button_content "><span class="fancySelect-selectedValue-def">Ежегодный основной</span></span>
+</a>
+
+
+                 
+                
+<span class="validation validation__ok    " id="Vacation_Type_ValidationControl"><span id="Vacation_Type_ValidationControl_Message"></span></span>
+
+
+			</div>
+        </div>
+        
+        <div class=" g-safeContext  hidden" id="Vacation_BenefitRate_OnOffPanel">
+			<div class="g-col-11 g-span-32">
+                <p>
+                    Порядок сохранения заработка:
+                     
+                    
+<span class="validation validation__ok    " id="Vacation_BenefitRate_ValidationControl"><span id="Vacation_BenefitRate_ValidationControl_Message"></span></span>
+
+                </p>
+                <div class="radioList">
+                    
+<div class="radioList   " id="Vacation_BenefitRate_NullableEnumRadioGroupControl">
+
+<div class="radioList_item">
+    <input type="radio" autocomplete="off" disabled="disabled" class="" name="Vacation_BenefitRate_NullableEnumRadioGroupControl" id="RadioGroup_Vacation_BenefitRate_NullableEnumRadioGroupControl_Full_input" />
+    <label for="RadioGroup_Vacation_BenefitRate_NullableEnumRadioGroupControl_Full_input" class=" -disabled">
+        100%
+    </label></div>
+<div class="radioList_item">
+    <input type="radio" autocomplete="off" disabled="disabled" class="" name="Vacation_BenefitRate_NullableEnumRadioGroupControl" id="RadioGroup_Vacation_BenefitRate_NullableEnumRadioGroupControl_Half_input" />
+    <label for="RadioGroup_Vacation_BenefitRate_NullableEnumRadioGroupControl_Half_input" class=" -disabled">
+        50%
+    </label></div>
+</div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="g-safeContext">
+
+	        <div class="g-col-1 g-span-10">
+		        Расчетный период:
+	        </div>
+	        <div class="g-col-11 g-span-38">
+	            
+                
+<span class="field field__px110 field__type field__type__calendarDay    " id="Vacation_CalculationPeriod_PeriodFrom_IdControl_Border">
+    <input type="text" autocomplete="off" maxlength="10" value="" class="" id="Vacation_CalculationPeriod_PeriodFrom_DateInputControl_Input" />
+    
+    <span machine-render="1" id="Vacation_CalculationPeriod_PeriodFrom_DateInputControl_Button" class="button button__type"><span class="button_content"></span></span>
+</span>
+
+
+                —
+                
+<span class="field field__px110 field__type field__type__calendarDay    " id="Vacation_CalculationPeriod_PeriodTo_IdControl_Border">
+    <input type="text" autocomplete="off" maxlength="10" value="" class="" id="Vacation_CalculationPeriod_PeriodTo_DateInputControl_Input" />
+    
+    <span machine-render="1" id="Vacation_CalculationPeriod_PeriodTo_DateInputControl_Button" class="button button__type"><span class="button_content"></span></span>
+</span>
+
+<span class="  " id="Vacation_CalculationPeriod_TextControl_Text">= 365 дней</span>
+                 
+                
+<span class="validation validation__ok" id="Vacation_CalculationPeriod_ValidationControl"><span id="Vacation_CalculationPeriod_ValidationControl_Message"></span></span>
+
+
+	        </div>
+        </div>
+
+        <div class="g-safeContext">
+	        <div class="g-col-11 g-span-38">
+	            <br />
+                
+
+
+<div class="container container__out container__wrapper__calc  container__wrapper " id="HasPeriodExclusionsContainer">                
+    <div class="checkboxList_item">
+        
+
+
+
+<input type="checkbox" autocomplete="off" class="" name="Vacation_VacationCalculationData_HasPeriodExclusions_CheckboxControl" id="Vacation_VacationCalculationData_HasPeriodExclusions_CheckboxControl_Checkbox" />
+
+
+        <label for="Vacation_VacationCalculationData_HasPeriodExclusions_CheckboxControl_Checkbox" class="">Есть периоды исключения</label>
+
+        <span class="icon icon__info" hint="PeriodExclusionsHint" id="PeriodExclusionsHintIcon"></span>
+    </div>
+    <div class="   hidden" id="Vacation_VacationCalculationData_PeriodExclusions_OnOffPanel">
+        <div id="PeriodExclusionsContainer" style=" margin:0 0 10px 0 ">
+            <div class="g-48 g-safeContext">
+                <div class="g-safeContext">
+            
+                    <div class="g-col-1 g-span-8 g-span-bordered"><span class="comment">Начало периода</span></div>
+                    <div class="g-col-9 g-span-1 g-span-bordered"><span class="comment"> </span></div>
+                    <div class="g-col-10 g-span-8 g-span-bordered"><span class="comment">Конец периода</span></div>
+                    <div class="g-col-18 g-span-1 g-span-bordered"><span class="comment"> </span></div>
+                    <div class="g-col-19 g-span-6 g-span-bordered"><span class="comment">Длительность</span></div>
+            
+                    <div class="g-col-25 g-span-2 g-span-bordered"><span class="comment"> </span></div>
+                    <div class="g-col-28 g-span-20"><span class="comment"> </span></div>
+                
+                </div>           
+            </div>
+
+            
+
+<div class="    hidden " id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl">
+    
+</div>
+
+<div itemtemplate="yes" class="hidden" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_ItemTemplate">
+    
+
+<div id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%">
+    <div class="g-48 g-safeContext">        
+        <div class="g-safeContext">
+            <div class="g-col-1 g-span-8">
+                
+<span class="field field__px110 field__type field__type__calendarDay    -disabled" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_PeriodFrom_IdControl_Border">
+    <input type="text" autocomplete="off" maxlength="10" value="" class="" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_PeriodFrom_DateInputControl_Input" disabled="disabled" />
+    
+    <span machine-render="1" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_PeriodFrom_DateInputControl_Button" class="button button__type"><span class="button_content"></span></span>
+</span>
+
+
+            </div>
+            <div class="g-col-9 g-span-1">
+                —
+            </div>
+            <div class="g-col-10 g-span-8">
+                
+<span class="field field__px110 field__type field__type__calendarDay    -disabled" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_PeriodTo_IdControl_Border">
+    <input type="text" autocomplete="off" maxlength="10" value="" class="" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_PeriodTo_DateInputControl_Input" disabled="disabled" />
+    
+    <span machine-render="1" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_PeriodTo_DateInputControl_Button" class="button button__type"><span class="button_content"></span></span>
+</span>
+
+
+            </div>
+            <div class="g-col-18 g-span-1"> </div>
+            <div class="g-col-19 g-span-6">
+                <span class=" field_label " id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_DaysForCalculations_TextControl_Text">0 дней</span>
+            </div>
+            
+            <div class="g-col-25 g-span-2 alignCenter">
+                
+                <a class="icon icon__delete" href="#" id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_DeleteItemLink"></a>
+            </div>
+            <div class="g-col-28 g-span-20">
+                
+<span class="validation validation__ok    " id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_ValidationControl"><span id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_%item_Vacation_VacationCalculationData_PeriodExclusions_ArrayControl%_Period_ValidationControl_Message"></span></span>
+
+            </div>
+        </div> 
+    </div>
+</div>
+
+</div>
+
+
+                
+            <div style=" margin-top: 5px ">
+                <a id="Vacation_VacationCalculationData_PeriodExclusions_ArrayControl_AddItemButton" class="link link__iconized icon__add" href="#">Добавить ещё один период</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+                <br /><br />
+                
+
+<div class="container container__out container__wrapper__calc  container__wrapper " id="HasIncreaseWageContainer">                
+    <div class="checkboxList_item">
+        
+
+
+
+<input type="checkbox" autocomplete="off" class="" name="Vacation_VacationCalculationData_HasIncreaseWage_CheckboxControl" id="Vacation_VacationCalculationData_HasIncreaseWage_CheckboxControl_Checkbox" />
+
+
+        <label for="Vacation_VacationCalculationData_HasIncreaseWage_CheckboxControl_Checkbox" class="">В расчетном периоде было повышение зарплаты по организации или подразделению</label>
+        <span class="icon icon__info" hint="IncreaseWageHint" id="IncreaseWageHintIcon"></span>
+    </div>
+    
+    <div class="   hidden" id="Vacation_VacationCalculationData_IncreasesWages_OnOffPanel">
+        <div id="IncreasesWagesContainer" style=" margin: 10px 0 10px 0; ">
+            <div class="g-48 g-safeContext">
+                <div class="g-safeContext">
+            
+                    <div class="g-col-1 g-span-11 g-span-bordered"><span class="comment">С месяца</span></div>
+                    <div class="g-col-12 g-span-1 g-span-bordered"><span class="comment"> </span></div>
+                    <div class="g-col-13 g-span-9 g-span-bordered"><span class="comment">Оклад до повышения</span></div>
+                    <div class="g-col-22 g-span-1 g-span-bordered"><span class="comment"> </span></div>
+                    <div class="g-col-23 g-span-8 g-span-bordered"><span class="comment">После повышения</span></div>
+            
+                    <div class="g-col-31 g-span-1 g-span-bordered"><span class="comment"> </span></div>
+                
+                </div>           
+            </div>
+
+        
+            
+
+<div class="    hidden " id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl">
+    
+</div>
+
+<div itemtemplate="yes" class="hidden" id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_ItemTemplate">
+    
+
+<div id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%">
+    
+    <div class="g-48 g-safeContext">
+        <div class="g-safeContext">
+            
+            <div class="g-col-1 g-span-11">
+
+<span tabindex="" class="button button__type button__type__calendar -disabled  " machine-render="1" id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_Month_AbsoluteMonthSelectorControl">
+    <span id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_Month_AbsoluteMonthSelectorControl_Title" class="button_content ">не задано</span>
+</span>
+
+</div>
+            <div class="g-col-12 g-span-1"> </div>
+            <div class="g-col-13 g-span-9">
+    <span class="field 
+        -disabled 
+         field__px100  
+        ">
+    
+    <input type="text" autocomplete="off" name="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_SalaryUpTo_CurrencyControl" value="0,00" title="" class=" align__right gray " disabled="disabled" id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_SalaryUpTo_CurrencyControl_Input" />
+
+</span>
+</div>
+            <div class="g-col-22 g-span-1"> </div>
+            <div class="g-col-23 g-span-8">
+    <span class="field 
+        -disabled 
+         field__px100  
+        ">
+    
+    <input type="text" autocomplete="off" name="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_SalaryAfter_CurrencyControl" value="0,00" title="" class=" align__right gray " disabled="disabled" id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_SalaryAfter_CurrencyControl_Input" />
+
+</span>
+</div>
+            
+            <div class="g-col-31 g-span-1">
+                
+                <a class="icon icon__delete" href="#" id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_DeleteItemLink"></a>
+            </div>
+            
+            <div class="g-col-33 g-span-15">
+                
+<span class="validation validation__ok    " id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_ValidationControl"><span id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_%item_Vacation_VacationCalculationData_IncreasesWages_ArrayControl%_ValidationControl_Message"></span></span>
+
+            </div>
+                
+        </div>
+    </div>
+
+</div>
+
+</div>
+            
+
+            <div style=" margin-top: 5px ">
+                <a id="Vacation_VacationCalculationData_IncreasesWages_ArrayControl_AddItemButton" class="link link__iconized icon__add" href="#">Добавить ещё одно повышение</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+            </div>
+        </div>
+
+    </div>
+    
+    <br /><br /><br />
+
+
+
+            
+    
+
+<!-- begin -->
+
+<div class="content_footer content_footer__stickable safeContext">
+    <div class="content_footer_wrapper">
+    <div class="content_footer_content">
+
+
+    
+        <div class="step__common">
+             
+             <div style=" top: 18px " class="float__right size__smallest relative align__right color__darkgray">
+                Калькулятор является частью <br /> 
+                онлайн-сервиса <a target="_blank" href="http://www.b-kontur.ru?p=555529">Контур.Бухгалтерия</a>
+            </div>                  
+               
+        </div>
+        <div class="step__last">
+            <div style=" top: 10px " class="float__right size__smallest relative align__right color__darkgray">
+                
+                <div style=" padding-right: 15px " class="g-inlineBlock">
+                    Рекомендуем попробовать онлайн-сервис <a target="_blank" href="http://www.b-kontur.ru?p=555529">Контур.Бухгалтерия</a><br />
+                    для удобного расчета зарплаты, простого ведения бухгалтерии,<br />
+                    легкой подготовки и отправки отчетности через интернет
+                </div>
+                <a style=" vertical-align: top; top: 10px; " id="TryService" title="" target="_blank" class="button button__xlarge" href="https://evrika.kontur.ru/Login/EnterOrRegister?p=555529">
+                    <span class="button_content">Попробовать</span>
+                </a>                
+                
+            </div>
+        </div>
+        <div class="step__promo">
+            
+            <div style=" width: 730px; top: 9px " class="float__right relative ">
+            <div class="g-24 safeContext">
+                <div class="safeContext">
+                    <div class="g-col-1 g-span-12">
+                        
+                        <h1>Понравилось?</h1>
+                        <p>
+                            У нас еще много быстрых расчетов для сложных вещей.<br />
+                            Удобный расчет зарплаты, больничных и отпусков,<br />
+                            простое ведение бухгалтерии, легкая подготовка<br />
+                            и отправка отчетности через интернет.
+                        </p>
+                        <p>
+                            <a target="_blank" href="http://www.b-kontur.ru?p=555529">Узнать больше</a>
+                        </p>
+                        
+                    </div>
+                    <div class="g-col-17 g-span-8 align__center">
+                        
+                            <img style=" margin-top: -4px; " class="relative" alt="" src="/WebForms/img/bklogoforcalc.png?hash=395782605" />
+                
+                            <div class="size__smallest color__darkgray">
+                                Бухгалтерия, зарплата и отчетность<br /> 
+                                для бухгалтеров небольших компаний
+                            </div>
+                            <a id="TryService" title="" target="_blank" class="button button__xlarge button__colored button__colored__purple" href="https://evrika.kontur.ru/Login/EnterOrRegister?p=555529">
+                                <span class="button_content">Начать пользоваться</span>
+                            </a>                
+                            <div class="size__smallest">
+                                Бесплатно на 30 дней
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+            
+        </div>
+
+
+    <div class="content_footer_actions">
+                <span id="Vacation_Wizard_WizardFooterControl_GoBack" title="" class="button 
+    
+    
+    
+    button__xlarge
+    button__direction button__direction__left
+    
+    
+    
+    
+    
+    
+     hidden  -disabled " machine-render="1">
+    <span class="button_content">Назад</span>
+</span>
+
+
+                <div class="footer_actions_description"><span class="  " id="Vacation_Wizard_AvailableStepsIndexes_TextControl_Text">Шаг 1 из 3</span></div>
+                <span id="Vacation_Wizard_WizardFooterControl_GoForward" title="" class="button                     button__xlarge     button__direction button__direction__right" machine-render="1">
+    <span class="button_content">Далее</span>
+</span>
+
+</div>
+        </div>
+    </div>
+</div>
+<!-- end -->
+
+            </div>
+        </div>
+
+    </div>
+
+
+    
+    
+    <div id="PeriodExclusionsHint" hint-unclosable="false" hint-type="info" hint-position-preferred="right" hint-position="right" class="hint hintType__info">
+    <div class="hint_arrow"></div>
+    <div class="hint_icons">
+        <span class="icon icon__info"></span>
+        <span class="icon icon__hint"></span>
+        <span class="icon icon__warning"></span>
+        <span class="icon icon__error"></span>
+        <span class="icon icon__transparent"></span>
+    </div>
+    <div class="hint_close"></div>
+    
+    <div style="width:350px" class="hint_content">
+
+
+    <p>
+        При расчете среднего заработка из расчетного периода<br /> 
+        исключают следующие периоды:
+    </p>
+    <ul class="hint_list_perfect">
+       <li>— больничные;</li> 
+       <li>— отпуска, в том числе без содержания;</li> 
+       <li>— командировки;</li> 
+       <li>— время простоя;</li> 
+       <li>
+           — и др. периоды в соответствии с<br /> 
+           <span class="pseudoHidden">— </span><a target="_blank" href="https://normativ.kontur.ru/document?moduleId=1&amp;documentId=145128#h72">п.5 Постановления Правительства РФ №922 от 24.12.2007г.</a>
+       </li> 
+     </ul>
+    </div>
+
+</div>
+
+<div id="IncreaseWageHint" hint-unclosable="false" hint-type="info" hint-position-preferred="right" hint-position="right" class="hint hintType__info">
+    <div class="hint_arrow"></div>
+    <div class="hint_icons">
+        <span class="icon icon__info"></span>
+        <span class="icon icon__hint"></span>
+        <span class="icon icon__warning"></span>
+        <span class="icon icon__error"></span>
+        <span class="icon icon__transparent"></span>
+    </div>
+    <div class="hint_close"></div>
+    
+    <div style="width:350px" class="hint_content">
+
+
+    <p>Для корректного расчета среднедневного заработка нужно знать, повышался ли сотруднику оклад в расчетном периоде:</p>
+    <ul>
+       <li>—если повышение оклада было для всех сотрудников организации или подразделения, установите флажок. Эврика проиндексирует оклад сотруднику за все месяцы периода, предшествующие месяцу повышения;</li> 
+       <li>—если повышение было персональным, не устанавливайте флажок.</li> 
+     </ul>
+    <br />
+        <p>В соответствии с <a target="_blank" href="https://normativ.kontur.ru/document?moduleId=1&amp;documentId=145128#h72">п.16 Постановления Правительства РФ №922 от 24.12.2007г.</a></p> 
+    </div>
+
+</div>
+
+<div id="periodLengthHintHint" hint-unclosable="false" hint-type="info" hint-position-preferred="bottom" hint-position="bottom" class="hint hintType__info">
+    <div class="hint_arrow"></div>
+    <div class="hint_icons">
+        <span class="icon icon__info"></span>
+        <span class="icon icon__hint"></span>
+        <span class="icon icon__warning"></span>
+        <span class="icon icon__error"></span>
+        <span class="icon icon__transparent"></span>
+    </div>
+    <div class="hint_close"></div>
+    
+    <div style="width: 400px" class="hint_content">
+
+
+    <p>
+        Количество дней отпуска не совпадает с календарными днями, потому что в этом периоде есть нерабочие праздничные дни, которые в число календарных дней отпуска не включаются.
+    </p>
+    <p>
+        <a target="_blank" href="https://normativ.kontur.ru/document?moduleId=1&amp;documentId=206755#h5271">Статья 120 Трудового кодекса РФ.</a>
+    </p>
+    </div>
+
+</div>
+
+
+
+
+    
+<span data-position="right" id="Vacation_Type_FancySelectControl_dropdownContent" class="dropdownBody dropdownBody-right " style="display: inline; top: 181.4px; left: 516.567px;" dropdown-parent="Vacation_Type_FancySelectControl">
+    <span class="dropdownLists dropdownLists__fancy dropdownLists__selectable">
+        
+        
+            <span class="dropdownList dropdownList__withoutTitle ">
+                <span class="dropdownList_item" fancyoption="0"><span class="fancySelect-selectedValue-def">Ежегодный основной</span>
+                </span><span class="dropdownList_item" fancyoption="1"><span class="fancySelect-selectedValue-def">Ежегодный дополнительный</span>
+                </span><span class="dropdownList_item" fancyoption="2"><span class="fancySelect-selectedValue-def">Учебный</span>
+                </span>
+            </span>
+        
+        
+
+    </span>
+</span>
+
+
+<div resizecontextname="Confirmation" resizecontext="Lightbox" lightboxname="Confirmation" id="Confirmation_Lightbox" class="lightbox  lightbox__type__normal  resizeContext">
+    <div class="lightbox_bg"></div>    
+        <div class="lightbox_wrap">
+            <div class="lightbox_entry">
+                <div class="lightbox_container">
+                    <div class="lightbox_header">Сохранить изменения?</div><div class="lightbox_content ">Вы не сохранили внесенные изменения.</div><div class="lightbox_footer"><div class="lightbox_footer_table"><div class="lightbox_footer_tr"><div class="lightbox_footer_td"><span lightboxaction="save" lightboxname="Confirmation" lightboxactionbutton="yes" id="Confirmation_LightboxButton_save" title="" class="button 
+    
+    button__colored button__colored__green
+    
+    button__large
+    
+    
+    
+    
+    
+    
+    
+    " machine-render="1">
+    <span class="button_content">Сохранить</span>
+</span>
+
+<span lightboxaction="continueWithoutSave" lightboxname="Confirmation" lightboxactionbutton="yes" id="Confirmation_LightboxButton_continueWithoutSave" title="" class="button 
+    
+    
+    
+    button__large
+    
+    
+    
+    
+    
+    
+    
+    " machine-render="1">
+    <span class="button_content">Не сохранять</span>
+</span>
+
+</div></div></div></div>
+                    <a class="lightbox_close" href="#"></a>
+                </div>
+            </div>
+        </div>
+</div>
+
+<div resizecontextname="ShowError" resizecontext="Lightbox" lightboxname="ShowError" id="ShowError_Lightbox" class="lightbox  lightbox__type__alert  resizeContext">
+    <div class="lightbox_bg"></div>    
+        <div class="lightbox_wrap">
+            <div class="lightbox_entry">
+                <div class="lightbox_container">
+                    <div class="lightbox_header">Произошла ошибка</div><div class="lightbox_content ">
+            <div style=" min-width:350px; max-width: 450px " class="hidden" id="showErrorMessage"></div>
+            </div><div class="lightbox_footer"><div class="lightbox_footer_table"><div class="lightbox_footer_tr"><div class="lightbox_footer_td"><span lightboxaction="cancel" lightboxname="ShowError" lightboxactionbutton="yes" id="ShowError_LightboxButton_cancel" title="" class="button 
+    
+    
+    
+    button__large
+    
+    
+    
+    
+    
+    
+    
+    " machine-render="1">
+    <span class="button_content">Закрыть</span>
+</span>
+
+</div></div></div></div>
+                    <a class="lightbox_close" href="#"></a>
+                </div>
+            </div>
+        </div>
+</div>
+    
+    <div id="calendarBody" class="calendarBody calendarBody__month"></div>
+
+    
+<script>
+
+    var pageClass = window.PropertiesPageController || PageController;
+    var pageController = new pageClass({
+"routeAction":"Run",
+"pageServices":{
+"DataModelSaveService":{
+"options":{
+"handlers":[{
+"name":"SKBKontur.Evrika.VacationCalculator.Front.Areas.CalculatorArea.Controllers.VacationCalculatorSaveHandler",
+"dataModels":[{"Name":"Vacation","Url":"Save?sessionId=250c7e03-72df-4c61-b094-9cb5c53aa902&amp;parameters=0&amp;saverName=SKBKontur.Evrika.VacationCalculator.Front.Areas.CalculatorArea.Controllers.VacationEditModelProvider"}],
+"onSave":function(binding, revisionData) { }
+}]},
+"createFunctionName":DataModelSaveService
+},
+"PageModel":{
+"options":{
+"dataModels":{
+"Vacation":{
+"ObjectData":{"BenefitRate":null,"CalculationPeriod":{"PeriodFrom":null,"PeriodTo":null},"HolidaysInPeriod":0,"Payment":{"Calculated":null,"Ndfl":null,"Paid":null},"Period":{"PeriodFrom":null,"PeriodTo":null},"PeriodLength":0,"Type":0,"VacationCalculationData":{"AverageDailyEarnings":{"Copecks":0,"Roubles":0,"State":0},"AverageNumberOfDaysInMonth":0,"CalculatedTotalPaid":{"Copecks":0,"Roubles":0,"State":0},"CalculatedTotalWorkedDays":0,"CalculationPeriod":{"PeriodFrom":null,"PeriodTo":null},"HasIncreaseWage":false,"HasPeriodExclusions":false,"IncreasesWages":[],"PeriodExclusions":[],"Primaries":[],"VacationPeriod":{"PeriodFrom":null,"PeriodTo":null}},"Wizard":{"AvailableSteps":[0,1,2],"AvailableStepsIndexes":[0,1,2],"LastVisitedStep":0}},
+"IsNew":false,
+"ShownBefore":false,
+"TypeDescriptionName":"SKBKontur.Evrika.VacationCalculator.Application.Entities.Vacation",
+"Registrators":{
+"registrators":[{
+"createControl":function(p,r){return new WizardHeaderControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"currentStepAbsoluteIndex":0,
+"allSteps":[0,1,2],
+"stepNames":["Properties","SummaryTable","Results"],
+"name":r.getFullName("Wizard_WizardHeaderControl")
+});},
+"bindingPath":"Wizard",
+"localName":"Wizard_WizardHeaderControl"},
+{
+"createControl":function(p,r){return new DateInputControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"canShowValidation":true,
+"maxValue":{"Day":1,"Month":1,"Year":2020},
+"minValue":{"Day":31,"Month":12,"Year":1940},
+"name":r.getFullName("Period_PeriodFrom_DateInputControl")
+});},
+"bindingPath":"Period.PeriodFrom",
+"localName":"Period_PeriodFrom_DateInputControl"},
+{
+"createControl":function(p,r){return new DateInputControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"canShowValidation":true,
+"maxValue":{"Day":1,"Month":1,"Year":2020},
+"minValue":{"Day":31,"Month":12,"Year":1940},
+"name":r.getFullName("Period_PeriodTo_DateInputControl")
+});},
+"bindingPath":"Period.PeriodTo",
+"localName":"Period_PeriodTo_DateInputControl"},
+{
+"createControl":function(p,r){return new ValidationControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"level":"deep",
+"minimumDisplayType":"ok",
+"name":r.getFullName("Period_ValidationControl")
+});},
+"bindingPath":"Period",
+"localName":"Period_ValidationControl"},
+{
+"createControl":function(p,r){return new FancySelectControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValidation":true,
+"dropDownId":"Vacation_Type_FancySelectControl",
+"values":[0,1,2],
+"emptyValue":"не задано",
+"getItemKey":function(p0){ return p0;}
+,
+"name":r.getFullName("Type_FancySelectControl")
+});},
+"bindingPath":"Type",
+"localName":"Type_FancySelectControl"},
+{
+"createControl":function(p,r){return new ValidationControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"level":"normal",
+"minimumDisplayType":"ok",
+"name":r.getFullName("Type_ValidationControl")
+});},
+"bindingPath":"Type",
+"localName":"Type_ValidationControl"},
+{
+"createControl":function(p,r){return new OnOffPanel(p,{
+"onOffType":1,
+"isDisabledByOnOff":true,
+"hiddenClass":"hidden",
+"inverted":false,
+"name":r.getFullName("BenefitRate_OnOffPanel")
+});},
+"bindingPath":"BenefitRate",
+"localName":"BenefitRate_OnOffPanel"},
+{
+"createControl":function(p,r){return new ValidationControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"level":"normal",
+"minimumDisplayType":"ok",
+"name":r.getFullName("BenefitRate_ValidationControl")
+});},
+"bindingPath":"BenefitRate",
+"localName":"BenefitRate_ValidationControl"},
+{
+"createControl":function(p,r){return new RadioGroupControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"buttons":{"Full":0, "Half":1}
+,
+"readonly":false,
+"name":r.getFullName("BenefitRate_NullableEnumRadioGroupControl")
+});},
+"bindingPath":"BenefitRate",
+"localName":"BenefitRate_NullableEnumRadioGroupControl"},
+{
+"createControl":function(p,r){return new DateInputControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"maxValue":{"Day":1,"Month":1,"Year":2020},
+"minValue":{"Day":31,"Month":12,"Year":1940},
+"name":r.getFullName("CalculationPeriod_PeriodFrom_DateInputControl")
+});},
+"bindingPath":"CalculationPeriod.PeriodFrom",
+"localName":"CalculationPeriod_PeriodFrom_DateInputControl"},
+{
+"createControl":function(p,r){return new DateInputControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"maxValue":{"Day":1,"Month":1,"Year":2020},
+"minValue":{"Day":31,"Month":12,"Year":1940},
+"name":r.getFullName("CalculationPeriod_PeriodTo_DateInputControl")
+});},
+"bindingPath":"CalculationPeriod.PeriodTo",
+"localName":"CalculationPeriod_PeriodTo_DateInputControl"},
+{
+"createControl":function(p,r){return new ValidationControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"level":"deep",
+"minimumDisplayType":"ok",
+"name":r.getFullName("CalculationPeriod_ValidationControl")
+});},
+"bindingPath":"CalculationPeriod",
+"localName":"CalculationPeriod_ValidationControl"},
+{
+"createControl":function(p,r){return new OnOffCssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"id":'HasPeriodExclusionsContainer'
+,
+"cssClassOn":"container__wrapper_",
+"cssClassOff":"container__wrapper",
+"name":r.getFullName("VacationCalculationData_PeriodExclusions_OnOffCssClassControl")
+});},
+"bindingPath":"VacationCalculationData.PeriodExclusions",
+"localName":"VacationCalculationData_PeriodExclusions_OnOffCssClassControl"},
+{
+"createControl":function(p,r){return new CheckboxControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"checkedValue":true,
+"uncheckedValue":false,
+"name":r.getFullName("VacationCalculationData_HasPeriodExclusions_CheckboxControl")
+});},
+"bindingPath":"VacationCalculationData.HasPeriodExclusions",
+"localName":"VacationCalculationData_HasPeriodExclusions_CheckboxControl"},
+{
+"createControl":function(p,r){return new OnOffPanel(p,{
+"onOffType":1,
+"isDisabledByOnOff":true,
+"hiddenClass":"hidden",
+"inverted":false,
+"name":r.getFullName("VacationCalculationData_PeriodExclusions_OnOffPanel")
+});},
+"bindingPath":"VacationCalculationData.PeriodExclusions",
+"localName":"VacationCalculationData_PeriodExclusions_OnOffPanel"},
+{
+"createControl":function(p,r){return new ArrayControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"editingOptions":{"EditingType":0,"CaretOptions":{"HideAfterEdit":false,"DisableArrayOnEdit":false,"InitiallyHidden":false},"CustomOptions":{}},
+"isNeverEmpty":false,
+"itemCreator":ItemControl
+,
+"itemOptions":{
+},
+"prependItems":false,
+"parentContext":{
+"type":0},
+"name":r.getFullName("VacationCalculationData_PeriodExclusions_ArrayControl")
+});},
+"bindingPath":"VacationCalculationData.PeriodExclusions",
+"localName":"VacationCalculationData_PeriodExclusions_ArrayControl"},
+{
+"createControl":function(p,r){return new OnOffCssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"id":'HasIncreaseWageContainer'
+,
+"cssClassOn":"container__wrapper_",
+"cssClassOff":"container__wrapper",
+"name":r.getFullName("VacationCalculationData_IncreasesWages_OnOffCssClassControl")
+});},
+"bindingPath":"VacationCalculationData.IncreasesWages",
+"localName":"VacationCalculationData_IncreasesWages_OnOffCssClassControl"},
+{
+"createControl":function(p,r){return new CheckboxControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"checkedValue":true,
+"uncheckedValue":false,
+"name":r.getFullName("VacationCalculationData_HasIncreaseWage_CheckboxControl")
+});},
+"bindingPath":"VacationCalculationData.HasIncreaseWage",
+"localName":"VacationCalculationData_HasIncreaseWage_CheckboxControl"},
+{
+"createControl":function(p,r){return new OnOffPanel(p,{
+"onOffType":1,
+"isDisabledByOnOff":true,
+"hiddenClass":"hidden",
+"inverted":false,
+"name":r.getFullName("VacationCalculationData_IncreasesWages_OnOffPanel")
+});},
+"bindingPath":"VacationCalculationData.IncreasesWages",
+"localName":"VacationCalculationData_IncreasesWages_OnOffPanel"},
+{
+"createControl":function(p,r){return new ArrayControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"editingOptions":{"EditingType":0,"CaretOptions":{"HideAfterEdit":false,"DisableArrayOnEdit":false,"InitiallyHidden":false},"CustomOptions":{}},
+"isNeverEmpty":false,
+"itemCreator":ItemControl
+,
+"itemOptions":{
+},
+"prependItems":false,
+"parentContext":{
+"type":0},
+"name":r.getFullName("VacationCalculationData_IncreasesWages_ArrayControl")
+});},
+"bindingPath":"VacationCalculationData.IncreasesWages",
+"localName":"VacationCalculationData_IncreasesWages_ArrayControl"},
+{
+"createControl":function(p,r){return new WizardFooterControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"currentStepAbsoluteIndex":0,
+"allSteps":[0,1,2],
+"stepNames":["Properties","SummaryTable","Results"],
+"name":r.getFullName("Wizard_WizardFooterControl")
+});},
+"bindingPath":"Wizard",
+"localName":"Wizard_WizardFooterControl"}],
+"lazyRegistrators":[{
+"createControl":function(p,r){return new CssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValueOnBind":false,
+"cssClasses":["hidden"],
+"id":'VacationPeriodText'
+,
+"conditions":[function(binding) { var func = function(p0, p1, p2){ return ((Expression.equal(Expression.cast(p1.getBinding('PeriodFrom').onOff.getFilteredValue(), JSONDate),null) || Expression.equal(Expression.cast(p1.getBinding('PeriodTo').onOff.getFilteredValue(), JSONDate),null)) || Expression.greaterThan(Expression.cast(p1.getBinding('PeriodFrom').onOff.getFilteredValue(), JSONDate),Expression.cast(p1.getBinding('PeriodTo').onOff.getFilteredValue(), JSONDate)));}; return func(binding.getRoot(), binding, binding.getWorld()); }
+],
+"name":r.getFullName("Period_CssClassControl")
+});},
+"bindingPath":"Period",
+"localName":"Period_CssClassControl"},
+{
+"createControl":function(p,r){return new TextControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"format":function(binding) { var func = function(p0, p1, p2){ return Expression.add("= ",p1.getValue().withNumberCase("день","дня","дней"));}; return func(binding.getRoot(), binding, binding.getWorld()); }
+,
+"needEncode":true,
+"showTip":false,
+"name":r.getFullName("PeriodLength_TextControl")
+});},
+"bindingPath":"PeriodLength",
+"localName":"PeriodLength_TextControl"},
+{
+"createControl":function(p,r){return new CssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValueOnBind":false,
+"elseCssClass":"hidden",
+"cssClasses":[null],
+"id":'periodLengthHint'
+,
+"conditions":[function(binding) { var func = function(p0, p1, p2){ return Expression.greaterThan(p1.onOff.getFilteredValue(),0);}; return func(binding.getRoot(), binding, binding.getWorld()); }
+],
+"name":r.getFullName("HolidaysInPeriod_CssClassControl")
+});},
+"bindingPath":"HolidaysInPeriod",
+"localName":"HolidaysInPeriod_CssClassControl"},
+{
+"createControl":function(p,r){return new TextControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"format":function(binding) { var func = function(p0, p1, p2){ return (Expression.greaterThan(Expression.coalesce(Expression.cast(p1.getValue(), Period), new Period()).getLength(),0)?Expression.add("= ",Expression.coalesce(Expression.cast(p1.getValue(), Period), new Period()).getLength().withNumberCase("день","дня","дней")):"");}; return func(binding.getRoot(), binding, binding.getWorld()); }
+,
+"needEncode":true,
+"showTip":false,
+"name":r.getFullName("CalculationPeriod_TextControl")
+});},
+"bindingPath":"CalculationPeriod",
+"localName":"CalculationPeriod_TextControl"},
+{
+"createControl":function(p,r){return new CssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValueOnBind":false,
+"cssClasses":["hidden"],
+"id":'Vacation_Wizard_WizardFooterControl_GoBack'
+,
+"conditions":[function(binding) { var func = function(p0, p1, p2){ return Expression.equal(Array.indexOf(p1.onOff.getFilteredValue(),0),0);}; return func(binding.getRoot(), binding, binding.getWorld()); }
+],
+"name":r.getFullName("Wizard_AvailableStepsIndexes_CssClassControl")
+});},
+"bindingPath":"Wizard.AvailableStepsIndexes",
+"localName":"Wizard_AvailableStepsIndexes_CssClassControl"},
+{
+"createControl":function(p,r){return new CssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValueOnBind":false,
+"cssClasses":["-disabled"],
+"id":'Vacation_Wizard_WizardFooterControl_GoBack'
+,
+"conditions":[function(binding) { var func = function(p0, p1, p2){ return Expression.equal(Array.indexOf(p1.onOff.getFilteredValue(),0),0);}; return func(binding.getRoot(), binding, binding.getWorld()); }
+],
+"name":r.getFullName("Wizard_AvailableStepsIndexes_CssClassControl")
+});},
+"bindingPath":"Wizard.AvailableStepsIndexes",
+"localName":"Wizard_AvailableStepsIndexes_CssClassControl"},
+{
+"createControl":function(p,r){return new TextControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"format":function(binding) { var func = function(p0, p1, p2){ return (Expression.equal(p1.getBindings('Each()').count(),1)?"":Expression.add(Expression.add(Expression.add("Шаг ",Expression.add(Array.indexOf(p1.getValue(),0),1))," из "),p1.getBindings('Each()').count()));}; return func(binding.getRoot(), binding, binding.getWorld()); }
+,
+"needEncode":true,
+"showTip":false,
+"name":r.getFullName("Wizard_AvailableStepsIndexes_TextControl")
+});},
+"bindingPath":"Wizard.AvailableStepsIndexes",
+"localName":"Wizard_AvailableStepsIndexes_TextControl"},
+{
+"createControl":function(p,r){return new CssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValueOnBind":false,
+"cssClasses":["hidden"],
+"id":'Vacation_Wizard_WizardFooterControl_GoForward'
+,
+"conditions":[function(binding) { var func = function(p0, p1, p2){ return Expression.equal(0,p1.getBindings('Each()').where(function(b) { return !b.onOff.isDisabled(); }).last().onOff.getFilteredValue());}; return func(binding.getRoot(), binding, binding.getWorld()); }
+],
+"name":r.getFullName("Wizard_AvailableStepsIndexes_CssClassControl")
+});},
+"bindingPath":"Wizard.AvailableStepsIndexes",
+"localName":"Wizard_AvailableStepsIndexes_CssClassControl"},
+{
+"createControl":function(p,r){return new CssClassControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":false,
+"isEditingDisabled":false,
+"showValueOnBind":false,
+"cssClasses":["-disabled"],
+"id":'Vacation_Wizard_WizardFooterControl_GoForward'
+,
+"conditions":[function(binding) { var func = function(p0, p1, p2){ return Expression.equal(0,p1.getBindings('Each()').where(function(b) { return !b.onOff.isDisabled(); }).last().onOff.getFilteredValue());}; return func(binding.getRoot(), binding, binding.getWorld()); }
+],
+"name":r.getFullName("Wizard_AvailableStepsIndexes_CssClassControl")
+});},
+"bindingPath":"Wizard.AvailableStepsIndexes",
+"localName":"Wizard_AvailableStepsIndexes_CssClassControl"}],
+"VacationCalculationData_PeriodExclusions_ArrayControl":{
+"registrators":[],
+"lazyRegistrators":[],
+"___Items___":{
+"registrators":[{
+"createControl":function(p,r){return new DateInputControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"canShowValidation":true,
+"maxValue":{"Day":1,"Month":1,"Year":2020},
+"minValue":{"Day":31,"Month":12,"Year":1940},
+"name":r.getFullName("Period_PeriodFrom_DateInputControl")
+});},
+"bindingPath":"Period.PeriodFrom",
+"localName":"Period_PeriodFrom_DateInputControl"},
+{
+"createControl":function(p,r){return new DateInputControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"canShowValidation":true,
+"maxValue":{"Day":1,"Month":1,"Year":2020},
+"minValue":{"Day":31,"Month":12,"Year":1940},
+"name":r.getFullName("Period_PeriodTo_DateInputControl")
+});},
+"bindingPath":"Period.PeriodTo",
+"localName":"Period_PeriodTo_DateInputControl"},
+{
+"createControl":function(p,r){return new ValidationControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"level":"deep",
+"minimumDisplayType":"ok",
+"name":r.getFullName("Period_ValidationControl")
+});},
+"bindingPath":"Period",
+"localName":"Period_ValidationControl"}],
+"lazyRegistrators":[{
+"createControl":function(p,r){return new TextControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"format":function(binding) { var func = function(p0, p1, p2){ return (Expression.greaterThanOrEqual(p1.getValue(),0)?p1.getValue().withNumberCase("день","дня","дней"):"");}; return func(binding.getRoot(), binding, binding.getWorld()); }
+,
+"needEncode":true,
+"showTip":false,
+"name":r.getFullName("DaysForCalculations_TextControl")
+});},
+"bindingPath":"DaysForCalculations",
+"localName":"DaysForCalculations_TextControl"}]}},
+"VacationCalculationData_IncreasesWages_ArrayControl":{
+"registrators":[],
+"lazyRegistrators":[],
+"___Items___":{
+"registrators":[{
+"createControl":function(p,r){return new AbsoluteMonthSelectorControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"minValue":{"Month":1,"Year":2010},
+"maxValue":{"Month":1,"Year":2018},
+"defaultValue":{"Month":1,"Year":2016},
+"closeAfterSelected":false,
+"format":function(binding) { var func = function(p0, p1, p2){ return (Expression.equal(Expression.cast(p1.getValue(), AbsoluteMonth),null)?"не задано":Expression.cast(p1.getValue(), AbsoluteMonth).format(3));}; return func(binding.getRoot(), binding, binding.getWorld()); }
+,
+"name":r.getFullName("Month_AbsoluteMonthSelectorControl")
+});},
+"bindingPath":"Month",
+"localName":"Month_AbsoluteMonthSelectorControl"},
+{
+"createControl":function(p,r){return new CurrencyControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"emptyValue":"0,00",
+"instantInput":true,
+"onlyRoubles":false,
+"name":r.getFullName("SalaryUpTo_CurrencyControl")
+});},
+"bindingPath":"SalaryUpTo",
+"localName":"SalaryUpTo_CurrencyControl"},
+{
+"createControl":function(p,r){return new CurrencyControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"emptyValue":"0,00",
+"instantInput":true,
+"onlyRoubles":false,
+"name":r.getFullName("SalaryAfter_CurrencyControl")
+});},
+"bindingPath":"SalaryAfter",
+"localName":"SalaryAfter_CurrencyControl"},
+{
+"createControl":function(p,r){return new ValidationControl(p,{
+"onOffType":3,
+"isDisabledByOnOff":true,
+"isEditingDisabled":false,
+"level":"deep",
+"minimumDisplayType":"ok",
+"name":r.getFullName("ValidationControl")
+});},
+"bindingPath":"",
+"localName":"ValidationControl"}],
+"lazyRegistrators":[]}}},
+"DataContractConfigurationName":"SKBKontur.Evrika.VacationCalculator.Front.Areas.CalculatorArea.Controllers.Properties.VacationPropertiesEditDataConfigurator",
+"World":{},
+"CanEdit":true,
+"IsEditable":true}},
+"binariesHash":"fa436b48b478f23aa5308ee5fc22e5877bab1aca"},
+"createFunctionName":PageModel
+},
+"SavePageService":{
+"options":{
+"suppressSaveSuccessBox":false,
+"dataModels":["Vacation"],
+"useConfirmation":true},
+"createFunctionName":SavePageService
+},
+"WizardNavigationService":{
+"options":{
+"wizardModelName":"Vacation",
+"modelChanged":false,
+"wizardMode":0,
+"activeStep":0,
+"pathToWizard":""},
+"createFunctionName":WizardNavigationService
+},
+"PageLightboxes":{
+"options":{
+"lightboxes":[{"AdditionalModels":[],"ModelName":null,"Name":"Confirmation"},{"AdditionalModels":[],"ModelName":null,"Name":"ShowError"}]},
+"createFunctionName":PageLightboxes
+},
+"PageHints":{
+"options":{
+"hints":{
+"PeriodExclusionsHint":{
+"options":{
+"position":"right",
+"behaviour":"1"}},
+"IncreaseWageHint":{
+"options":{
+"position":"right",
+"behaviour":"1"}},
+"periodLengthHintHint":{
+"options":{
+"position":"bottom",
+"behaviour":"1"}}}},
+"createFunctionName":PageHints
+},
+"LazyContentLoader":{
+"options":{
+"url":"LazyContentLoader",
+"loadImmediatelyViews":[]},
+"createFunctionName":LazyContentLoader
+},
+"DropDownButtonsService":{
+"options":{
+},
+"createFunctionName":DropDownButtonsService
+},
+"LazyRenderer":{
+"options":{
+"actionNames":["Vacation_Type_FancySelectControl","Lightbox:Confirmation","Lightbox:ShowError"]},
+"createFunctionName":LazyRenderer
+},
+"ButtonsService":{
+"options":{
+},
+"createFunctionName":ButtonsService
+}},
+"suppressCookie":false});
+
+    $(document).bind("runPage", function () {
+        if (!UrlUtility.getUrlPath().contains('/ControlsTesting')) {
+            if ($("html").hasClass("ie-lt8") &amp;&amp; !UrlUtility.getUrlPath().endsWith('/OldBrowser')) {
+                window.location.href = '/OldBrowser';
+                return;
+            }
+            if (!$("html").hasClass("ie-lt8") &amp;&amp; UrlUtility.getUrlPath().endsWith('/OldBrowser')) {
+                window.location.href = "/";
+                return;
+            }
+        }
+        pageController.init();
+    });
+</script>
+
+    
+    <script>
+        var Calc = {
+            sendMessageToCalc: function (message) {
+                message = $.toJSON(message);
+                if (typeof (console) !== "undefined") console.log('send: ' + message);
+                this.__sink.postMessage(message, '*');
+            },
+            __iAmInIframe: function () {
+                return window != top;
+            },
+            init: function () {
+                if (this.__iAmInIframe())
+                    $(function () { Calc.__doInit(); });
+            },
+            __doInit: function () {
+                this.__sink = window.parent;
+                this.load();
+            },
+            load: function () {
+                this.__pollHeight();
+            },
+            __pollHeight: function () {
+                var height = $(document.body).height();
+                if (this.__initHeight !== height &amp;&amp; height != 0) {
+                    this.sendMessageToCalc({ setHeight: height });
+                    this.__initHeight = height;
+                }
+                setTimeout(function () { Calc.__pollHeight(); }, 100);
+            }
+        };
+        Calc.init();
+    </script>
+    
+<!-- Google Tag Manager -->
+
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+    j = d.createElement(s), dl = l != 'dataLayer' ? '&amp;l=' + l : ''; j.async = true; j.src =
+    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-TST42H');</script>
+<!-- End Google Tag Manager -->
+
+
+
+<script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","//www.google-analytics.com/analytics.js","ga");ga("create","UA-42825235-1","kontur-evrika.ru");ga("send","pageview");</script><div class="calendar" id="DateSelectCalendar" style="-moz-user-select: none;"><div class="calendar_center" id="calendar_center"><div class="calendar_days_viewPort" id="calendar_days_viewPort"><div class="calendar_days" id="calendar_days" style="top: 12.5px;"></div><div class="calendar_monthHolder" id="calendar_monthHolder"></div><div class="calendar_ready" id="calendar_ready"></div></div><div class="calendar_panel"><div class="calendar_panel_shadow" id="calendar_panel_shadow"></div><div class="calendar_dateIcon" id="calendar_dateIcon"></div><div class="calendar_selectControl calendar_monthSelect" id="calendar_monthSelect"><div class="calendar_selectControl_value" id="calendar_selectControl_value_month"></div><div class="calendar_select_directions" id="calendar_select_directions_month"></div><div class="calendar_select" id="calendar_select_month"><div class="calendar_select_top"></div><a class="calendar_select_toStart" id="calendar_select_toStart_month" href="#"></a><div class="calendar_select_viewPort" id="calendar_select_viewPort_month"><ul class="calendar_select_list" id="calendar_select_list_month"><li><a data-value="0" href="#" class="calendar_select_list_item">Январь</a></li><li><a data-value="1" href="#" class="calendar_select_list_item">Февраль</a></li><li><a data-value="2" href="#" class="calendar_select_list_item">Март</a></li><li><a data-value="3" href="#" class="calendar_select_list_item">Апрель</a></li><li><a data-value="4" href="#" class="calendar_select_list_item">Май</a></li><li><a data-value="5" href="#" class="calendar_select_list_item">Июнь</a></li><li><a data-value="6" href="#" class="calendar_select_list_item">Июль</a></li><li><a data-value="7" href="#" class="calendar_select_list_item">Август</a></li><li><a data-value="8" href="#" class="calendar_select_list_item">Сентябрь</a></li><li><a data-value="9" href="#" class="calendar_select_list_item">Октябрь</a></li><li><a data-value="10" href="#" class="calendar_select_list_item">Ноябрь</a></li><li><a data-value="11" href="#" class="calendar_select_list_item">Декабрь</a></li></ul></div><a class="calendar_select_toEnd" id="calendar_select_toEnd_month" href="#"></a><div class="calendar_select_bottom"></div></div></div><div class="calendar_selectControl calendar_yearSelect calendar_select__scroll" id="calendar_yearSelect"><div class="calendar_selectControl_value" id="calendar_selectControl_value_year"></div><div class="calendar_select_directions" id="calendar_select_directions_year"></div><div class="calendar_select" id="calendar_select_year"><div class="calendar_select_top"></div><a class="calendar_select_toStart" id="calendar_select_toStart_year" href="#"></a><div class="calendar_select_viewPort" id="calendar_select_viewPort_year" style="height: 228px;"><ul class="calendar_select_list" id="calendar_select_list_year"><li><a data-value="1940" href="#" class="calendar_select_list_item">1940</a></li><li><a data-value="1941" href="#" class="calendar_select_list_item">1941</a></li><li><a data-value="1942" href="#" class="calendar_select_list_item">1942</a></li><li><a data-value="1943" href="#" class="calendar_select_list_item">1943</a></li><li><a data-value="1944" href="#" class="calendar_select_list_item">1944</a></li><li><a data-value="1945" href="#" class="calendar_select_list_item">1945</a></li><li><a data-value="1946" href="#" class="calendar_select_list_item">1946</a></li><li><a data-value="1947" href="#" class="calendar_select_list_item">1947</a></li><li><a data-value="1948" href="#" class="calendar_select_list_item">1948</a></li><li><a data-value="1949" href="#" class="calendar_select_list_item">1949</a></li><li><a data-value="1950" href="#" class="calendar_select_list_item">1950</a></li><li><a data-value="1951" href="#" class="calendar_select_list_item">1951</a></li><li><a data-value="1952" href="#" class="calendar_select_list_item">1952</a></li><li><a data-value="1953" href="#" class="calendar_select_list_item">1953</a></li><li><a data-value="1954" href="#" class="calendar_select_list_item">1954</a></li><li><a data-value="1955" href="#" class="calendar_select_list_item">1955</a></li><li><a data-value="1956" href="#" class="calendar_select_list_item">1956</a></li><li><a data-value="1957" href="#" class="calendar_select_list_item">1957</a></li><li><a data-value="1958" href="#" class="calendar_select_list_item">1958</a></li><li><a data-value="1959" href="#" class="calendar_select_list_item">1959</a></li><li><a data-value="1960" href="#" class="calendar_select_list_item">1960</a></li><li><a data-value="1961" href="#" class="calendar_select_list_item">1961</a></li><li><a data-value="1962" href="#" class="calendar_select_list_item">1962</a></li><li><a data-value="1963" href="#" class="calendar_select_list_item">1963</a></li><li><a data-value="1964" href="#" class="calendar_select_list_item">1964</a></li><li><a data-value="1965" href="#" class="calendar_select_list_item">1965</a></li><li><a data-value="1966" href="#" class="calendar_select_list_item">1966</a></li><li><a data-value="1967" href="#" class="calendar_select_list_item">1967</a></li><li><a data-value="1968" href="#" class="calendar_select_list_item">1968</a></li><li><a data-value="1969" href="#" class="calendar_select_list_item">1969</a></li><li><a data-value="1970" href="#" class="calendar_select_list_item">1970</a></li><li><a data-value="1971" href="#" class="calendar_select_list_item">1971</a></li><li><a data-value="1972" href="#" class="calendar_select_list_item">1972</a></li><li><a data-value="1973" href="#" class="calendar_select_list_item">1973</a></li><li><a data-value="1974" href="#" class="calendar_select_list_item">1974</a></li><li><a data-value="1975" href="#" class="calendar_select_list_item">1975</a></li><li><a data-value="1976" href="#" class="calendar_select_list_item">1976</a></li><li><a data-value="1977" href="#" class="calendar_select_list_item">1977</a></li><li><a data-value="1978" href="#" class="calendar_select_list_item">1978</a></li><li><a data-value="1979" href="#" class="calendar_select_list_item">1979</a></li><li><a data-value="1980" href="#" class="calendar_select_list_item">1980</a></li><li><a data-value="1981" href="#" class="calendar_select_list_item">1981</a></li><li><a data-value="1982" href="#" class="calendar_select_list_item">1982</a></li><li><a data-value="1983" href="#" class="calendar_select_list_item">1983</a></li><li><a data-value="1984" href="#" class="calendar_select_list_item">1984</a></li><li><a data-value="1985" href="#" class="calendar_select_list_item">1985</a></li><li><a data-value="1986" href="#" class="calendar_select_list_item">1986</a></li><li><a data-value="1987" href="#" class="calendar_select_list_item">1987</a></li><li><a data-value="1988" href="#" class="calendar_select_list_item">1988</a></li><li><a data-value="1989" href="#" class="calendar_select_list_item">1989</a></li><li><a data-value="1990" href="#" class="calendar_select_list_item">1990</a></li><li><a data-value="1991" href="#" class="calendar_select_list_item">1991</a></li><li><a data-value="1992" href="#" class="calendar_select_list_item">1992</a></li><li><a data-value="1993" href="#" class="calendar_select_list_item">1993</a></li><li><a data-value="1994" href="#" class="calendar_select_list_item">1994</a></li><li><a data-value="1995" href="#" class="calendar_select_list_item">1995</a></li><li><a data-value="1996" href="#" class="calendar_select_list_item">1996</a></li><li><a data-value="1997" href="#" class="calendar_select_list_item">1997</a></li><li><a data-value="1998" href="#" class="calendar_select_list_item">1998</a></li><li><a data-value="1999" href="#" class="calendar_select_list_item">1999</a></li><li><a data-value="2000" href="#" class="calendar_select_list_item">2000</a></li><li><a data-value="2001" href="#" class="calendar_select_list_item">2001</a></li><li><a data-value="2002" href="#" class="calendar_select_list_item">2002</a></li><li><a data-value="2003" href="#" class="calendar_select_list_item">2003</a></li><li><a data-value="2004" href="#" class="calendar_select_list_item">2004</a></li><li><a data-value="2005" href="#" class="calendar_select_list_item">2005</a></li><li><a data-value="2006" href="#" class="calendar_select_list_item">2006</a></li><li><a data-value="2007" href="#" class="calendar_select_list_item">2007</a></li><li><a data-value="2008" href="#" class="calendar_select_list_item">2008</a></li><li><a data-value="2009" href="#" class="calendar_select_list_item">2009</a></li><li><a data-value="2010" href="#" class="calendar_select_list_item">2010</a></li><li><a data-value="2011" href="#" class="calendar_select_list_item">2011</a></li><li><a data-value="2012" href="#" class="calendar_select_list_item">2012</a></li><li><a data-value="2013" href="#" class="calendar_select_list_item">2013</a></li><li><a data-value="2014" href="#" class="calendar_select_list_item">2014</a></li><li><a data-value="2015" href="#" class="calendar_select_list_item">2015</a></li><li><a data-value="2016" href="#" class="calendar_select_list_item">2016</a></li><li><a data-value="2017" href="#" class="calendar_select_list_item">2017</a></li><li><a data-value="2018" href="#" class="calendar_select_list_item">2018</a></li><li><a data-value="2019" href="#" class="calendar_select_list_item">2019</a></li><li><a data-value="2020" href="#" class="calendar_select_list_item">2020</a></li></ul></div><a class="calendar_select_toEnd" id="calendar_select_toEnd_year" href="#"></a><div class="calendar_select_bottom"></div></div></div></div></div></div></body></html>
